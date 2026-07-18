@@ -1,0 +1,23 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Clivet WSAT-YSi Modbus",
+        "description": "Connect via a Modbus TCP gateway (RS-485, H1-/H2+ port on the MASTER unit controller). Enable Modbus first: SERVICE MENU > SETTING ADDRESS > Modbus enable > YES.",
+        "data": {
+          "host": "Gateway IP address",
+          "port": "TCP port",
+          "slave": "Modbus slave ID",
+          "units": "Number of units (1-16, modular configuration)",
+          "scan_interval": "Polling interval [s]"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Cannot connect to gateway or read registers"
+    },
+    "abort": {
+      "already_configured": "Device is already configured"
+    }
+  }
+}
