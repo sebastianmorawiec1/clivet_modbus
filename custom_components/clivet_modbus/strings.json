@@ -1,0 +1,23 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Clivet WSAT-YSi Modbus",
+        "description": "Połączenie z agregatem przez bramkę Modbus TCP (RS-485, port H1-/H2+ na sterowniku jednostki MASTER). Pamiętaj o aktywacji: SERVICE MENU > SETTING ADDRESS > Modbus enable > YES.",
+        "data": {
+          "host": "Adres IP bramki",
+          "port": "Port TCP",
+          "slave": "Adres Modbus (slave ID)",
+          "units": "Liczba jednostek (1-16, konfiguracja modułowa)",
+          "scan_interval": "Interwał odpytywania [s]"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Nie można połączyć się z bramką lub odczytać rejestrów"
+    },
+    "abort": {
+      "already_configured": "To urządzenie jest już skonfigurowane"
+    }
+  }
+}
